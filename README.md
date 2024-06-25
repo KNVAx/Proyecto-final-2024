@@ -3,15 +3,16 @@ output:
   html_document: default
   pdf_document: default
 ---
-## Here is an example of a markdown file
+## 
 
 Headers are indicated with `#`.
 
-# Arbol filogenetico de Prunus 
+# Arbol filogenetico de Rosaceae con gen MA3 
 
-One Paragraph of project description goes here
+El gen MA3 es uno de los seis genes que regulan la sensibilidad fotoperiódica de la floración en sorgo (Sorghum bicolor [L.] Moench). La mutación MA3R de este gen causa un fenotipo similar a plantas que se sabe carecen de fitocromo B, y el sorgo MA3 carece de un fitocromo de 123 KD que predomina en plantas cultivadas con luz y que está presente en plantas no-MA3. Los datos encontrados en NCBI sobre las Rosaceae se compararán con un grupo externo de Poaceae para identificar posibles homólogos y analizar las diferencias y similitudes en la regulación genética de la fotoperiodicidad y otros procesos de desarrollo entre estas dos familias de plantas.
 
 ![*Prunus persica*](https://upload.wikimedia.org/wikipedia/commons/d/de/Illustration_Prunus_persica0.jpg)
+
 
 
 ## Preguntas sobre el proyecto
