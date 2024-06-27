@@ -3,16 +3,12 @@ output:
   html_document: default
   pdf_document: default
 ---
-## 
-
-title="..."
 
 # Arbol filogenético de Prunus con gen ortólogo *rbcL*
 
-![Alt text](C:\Users\Usuario\Desktop\proyectofinal24\data\results\Imag.PNG?raw=true "Filogenia")
+![AAAA](C:\Users\Usuario\Desktop\proyectofinal24\data\results\Imag.PNG?raw=true "Filogenia")
 
 ![*Prunus persica*](https://upload.wikimedia.org/wikipedia/commons/d/de/Illustration_Prunus_persica0.jpg)
-
 
 
 ## Preguntas sobre el proyecto
@@ -20,15 +16,23 @@ title="..."
 
 1.¿Que tipo de datos quieres utilizar?
 
+Se utilizarán datos del gen rbcL para el género Prunus, descargados de la base de datos NCBI bajo los filtros de "protein-coding" y "RefSeq", de los cuales, al día de hoy 25/06/2024, se generaron 81 resultados. De estos, se escogieron 20 para trabajar junto con un grupo externo perteneciente al género Rubus.
+
 2.¿En que formato estan tus datos?
 
+Todos los datos se encuentran en formato FASTA. El dataset fue descargado en formato de secuencias proteicas (FASTA), alineados con MUSCLE, procesados por IQ-TREE y visualizados en FigTree al estar en formato treefile.
+
 3 ¿Que quisieras hacer con estos datos?
-.
+
+Con una filogenia de Prunus basada en el gen ortólogo rbcL, se pueden determinar relaciones evolutivas entre las especies, estudiar patrones de diversificación, reconstruir ancestros comunes y comparar con otros géneros de la familia Rosaceae. Además, se pueden identificar eventos de hibridación, realizar estudios de conservación, análisis biogeográficos y explorar adaptaciones específicas de las especies.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
+GIT BASH
+FigTree
+IQTREE
 ```
 GITHUB
 ```
@@ -36,6 +40,11 @@ GITHUB
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
+NCBI
+Sublime Text
+MUSCLE
+IQTREE
+FigTree
 
 ##Tutorial para descargar GitHub
 
@@ -57,26 +66,34 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ### And coding style tests
 
 Explain what these tests test and why
+mkdir
+git ..
 
 ```
 Give an example
 ```
+# INSTALLING IQ-TREE
+####################
 
+export TOOLS_DIR=/home/userid/tools
+cd $TOOLS_DIR
+wget https://github.com/iqtree/iqtree2/releases/download/v2.2.0/iqtree-2.2.0-Linux.tar.gz
+tar -xzvf iqtree-2.2.0-Linux.tar.gz && rm iqtree-2.2.0-Linux.tar.gz
+export PATH=$PATH:$TOOLS_DIR/iqtree-2.2.0-Linux/bin/
+
+##########################
+# SET UP PROJECT DIRECTORY
+##########################
+
+export PROJ_DIR=/scratch/mt2245/CompGenomicsCourse/fall22/phylo/
+mkdir $PROJ_DIR && cd $PROJ_DIR && mkdir ml && cd ml
+
+# Let's move the example data into workdir using symbolic links
+ln -s $TOOLS_DIR/iqtree-2.2.0-Linux/example.phy
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
@@ -101,13 +118,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* swcarpentry
 * Inspiration
 * etc
 
