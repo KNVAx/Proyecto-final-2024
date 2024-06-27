@@ -1,0 +1,126 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=20;
+	taxlabels
+	Prunus_apetala
+	Prunus_armeniaca
+	Prunus_avium
+	Prunus_brachypoda
+	Prunus_campanulata
+	Prunus_cerasifera
+	Prunus_cerasoides
+	Prunus_cerasus
+	Prunus_clarofolia
+	Prunus_conradinae
+	Prunus_crataegifolia
+	Prunus_dictyoneura
+	Prunus_dielsiana
+	Prunus_discadenia
+	Prunus_dolichadenia
+	Prunus_domestica
+	Prunus_duclouxii
+	Prunus_fasciculata
+	Prunus_humilis
+	Rubus_boninensis
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Rubus_boninensis[&!color=#000000]:0.013983,Prunus_brachypoda:0.01163,(((Prunus_fasciculata:0.004113,((Prunus_cerasifera:1.0E-6,Prunus_domestica:1.0E-6)[&label=69]:2.0E-6,(((((((((((Prunus_apetala:0.0,Prunus_dolichadenia:0.0):0.0,Prunus_cerasoides:0.0):0.0,Prunus_duclouxii:0.0):0.0,Prunus_clarofolia:0.0):0.0,Prunus_crataegifolia:0.0):0.0,Prunus_discadenia:0.0):0.0,Prunus_dielsiana:0.0):0.0,Prunus_campanulata:0.0):0.0,Prunus_conradinae:0.0):1.0E-6,Prunus_avium:1.0E-6)[&label=68]:0.001996,Prunus_cerasus:0.004238)[&label=90]:0.008602)[&label=90]:0.009368)[&label=82]:0.004417,(Prunus_humilis:1.0E-6,Prunus_dictyoneura:1.0E-6)[&label=41]:1.0E-6)[&label=72]:0.004277,Prunus_armeniaca:2.0E-6)[&label=78]:0.006698);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="label";
+	set appearance.branchColorGradient=true;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set colour.order.label="label:41,68,69,72,78,82,90";
+	set colour.order.names="Names:";
+	set colour.scheme.label="label:HSBDiscrete{hue,1,0.0,1.0,0.6,0.6,0.4,0.8}";
+	set colour.scheme.names="Names:HSBDiscrete{hue,1,0.0,1.0,0.5,0.6,0.4,0.8}";
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=11;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=14;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=true;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=true;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=971;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=2.5;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=2.0;
+	set tipLabels.colorAttribute="Names";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=2;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=true;
+	set trees.transformType="cladogram";
+end;
+

@@ -1,0 +1,96 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=11;
+TAXLABELS
+[1] 'Rubus_boninensis'
+[2] 'Prunus_brachypoda'
+[3] 'Prunus_fasciculata'
+[4] 'Prunus_humilis'
+[5] 'Prunus_armeniaca'
+[6] 'Prunus_dictyoneura'
+[7] 'Prunus_cerasifera'
+[8] 'Prunus_domestica'
+[9] 'Prunus_apetala'
+[10] 'Prunus_avium'
+[11] 'Prunus_cerasus'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=11 nsplits=70;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 7,
+	100	 8,
+	69	 7 8,
+	100	 9,
+	100	 10,
+	100	 11,
+	9	 10 11,
+	90	 9 10 11,
+	90	 7 8 9 10 11,
+	82	 1 2 4 5 6,
+	100	 4,
+	100	 6,
+	41	 4 6,
+	72	 1 2 5,
+	100	 5,
+	78	 1 2,
+	100	 1,
+	68	 9 10,
+	10	 3 9 10 11,
+	1	 3 7 9 10 11,
+	12	 1 2 4 5,
+	11	 8 9 10 11,
+	6	 5 6,
+	3	 4 5 6,
+	15	 3 4 6,
+	18	 7 9 10 11,
+	2	 1 2 3 4 6,
+	33	 1 2 5 6,
+	20	 1 5,
+	2	 1 2 4 6,
+	2	 1 2 4,
+	19	 9 11,
+	3	 1 4 5 6,
+	1	 2 4 6,
+	5	 1 2 6,
+	4	 3 4,
+	1	 7 8 9,
+	1	 7 8 9 10,
+	1	 1 5 6,
+	9	 7 8 11,
+	1	 7 8 9 11,
+	1	 3 8 9 10 11,
+	2	 3 4 5 6,
+	2	 2 5,
+	1	 2 4,
+	4	 3 6,
+	3	 4 5,
+	0	 1 3 5 6,
+	0	 7 8 10,
+	2	 7 8 10 11,
+	1	 1 4 5,
+	0	 2 3 4 5 6,
+	1	 1 2 3 4 5,
+	0	 1 2 3 4,
+	0	 4 7 8,
+	1	 8 11,
+	1	 1 2 3 5 6,
+	1	 1 2 3 5,
+	0	 3 7 8,
+	0	 1 4 6,
+	0	 3 5,
+	0	 2 4 5 6,
+	0	 1 2 3,
+	0	 1 3,
+	0	 2 3 4 6,
+	0	 3 4 9 10 11,
+	0	 1 3 4 6,
+	0	 3 8,
+;
+END; [Splits]
+
