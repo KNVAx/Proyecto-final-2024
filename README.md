@@ -8,6 +8,10 @@ output:
 
 ![generado por FigTree](C:\Users\Usuario\Desktop\proyectofinal24\Imag.png?raw=true "Filogenia")
 
+(ya intente de todo y no se abre la imagen, con todo esta entre las carpetas principales)
+
+En este estudio, se construyó una filogenia del género Prunus utilizando el gen ortólogo rbcL. Los resultados de la filogenia revelan una clara estructuración evolutiva entre las especies de Prunus, respaldada por valores de bootstrap que indican distintos niveles de confianza en las relaciones propuestas. Específicamente, los valores de bootstrap que se obtuvieron ej: 78, 90 y 41 para diferentes clados dentro del árbol filogenético. Un valor de bootstrap de 90 sugiere una alta confianza en la agrupación de ciertas especies, mientras que un valor de 78 indica una confianza moderada en la relación de otro grupo. Por otro lado, un valor de 41 muestra una menor certeza en la conexión entre algunas especies, sugiriendo la necesidad de más datos o análisis adicionales para confirmar estas relaciones. En general, esta filogenia proporciona una base para entender las relaciones evolutivas en Prunus.
+
 ![*Prunus persica*](https://upload.wikimedia.org/wikipedia/commons/d/de/Illustration_Prunus_persica0.jpg)
 
 
