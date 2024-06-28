@@ -6,7 +6,7 @@ output:
 
 # Arbol filogenético de Prunus con gen ortólogo *rbcL*
 
-![generado por FigTree](C:\Users\Usuario\Desktop\proyectofinal24\data\results\Imag\.PNG?raw=true "Filogenia")
+![generado por FigTree](C:\Users\Usuario\Desktop\proyectofinal24\results\Imag.png?raw=true "Filogenia")
 
 ![*Prunus persica*](https://upload.wikimedia.org/wikipedia/commons/d/de/Illustration_Prunus_persica0.jpg)
 
